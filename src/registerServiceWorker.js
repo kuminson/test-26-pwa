@@ -3,12 +3,14 @@
 import { register } from 'register-service-worker'
 
 if (process.env.NODE_ENV === 'production') {
+// if (process.env.NODE_ENV) {
   register(`${process.env.BASE_URL}service-worker.js`, {
-    ready () {
+    ready (res) {
       console.log(
         'App is being served from cache by a service worker.\n' +
         'For more details, visit https://goo.gl/AFskqB'
       )
+      res.showNotification('杨大帅比！！！')
     },
     cached () {
       console.log('Content has been cached for offline use.')
