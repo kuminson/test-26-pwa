@@ -13,8 +13,8 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/test-26-pwa/index.html",
-  "display": "standalone",
+  "start_url": "/index.html",
+  "display": "fullscreen",
   "background_color": "#000000",
   "theme_color": "#4DBA87"
 }
